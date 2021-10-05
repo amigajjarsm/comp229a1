@@ -1,0 +1,149 @@
+
+  <%- include partials/header.ejs %>
+      
+  <%- include partials/main_nav.ejs %>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <div class="jumbotron">
+      <% if (title == "Home"){ %> 
+
+       <h1 class="display-4">Welcome to Home page</h1>
+       
+       
+       <p class="lead"> Knowledge, Perfomance and Perfection </p>
+
+       <hr class="my-4">
+       
+       <a class="btn btn-primary" href="http://localhost:3000/about" role="button">About Me</a>
+        <a class="btn btn-primary " href="http://localhost:3000/products" role="button">Our Products</a>
+        <a class="btn btn-primary " href="http://localhost:3000/services" role="button">Services</a>
+        <a class="btn btn-primary " href="http://localhost:3000/contact" role="button">Contact Us</a>
+       <% } %>
+       <div class="jumbotron">
+       
+       
+        <% if (title == "About"){ %> 
+
+        <h1 class="display-4">About Me</h1>
+        <img src="/assets/images/photo.png" style="float:right;">
+        <h4>Name: Ami Yogeshbhai Gajjar</h4>
+        <p class="lead">I am student of <b>Software Engineering Technology</b> at Centennial College.My Previous Background was Life Science. I have working experince in Resench,Pharmaceutical,Laboratory. </p>
+
+        <hr class="my-4">
+        
+        <a class="btn btn-primary btn-lg" href="/assets/Resume.pdf" role="button">Resume</a>
+        <% } %>
+
+        <% if (title == "Products"){ %> 
+
+          <div class="row">
+          <div class="col">
+            <h3>Database Project for e-Commerce</h3>
+            <p>Created sets of tables and relatioship among them for the online purchases</p>
+          </div>
+
+          <div class="col">
+            <img src="/assets/images/pro1.png">
+          </div>
+          
+            <div class="row">
+            <div class="col">
+              <h3>Train Traking App</h3>
+              <p>The “train track” system will help passengers Track time from departure to arrival of a train from station to station and will give users access to updated information on train schedules</p>
+            </div>
+            
+            <div class="col">
+              <img src="/assets/images/pro2.png">
+            </div>
+            &nbsp;
+            <div class="row">
+              <div class="col">
+                <h3>Medical Scheduling Software</h3>
+                <p>This project is in process. we are working on the Scheduling of medical appointment in differnet speciality</p>
+              </div>
+    
+              <div class="col">
+                <img src="/assets/images/pro3.png">
+              </div>
+
+        </div>
+        <% } %>
+       
+        <% if (title == "Services"){ %> 
+
+          <div class="row">
+          <div class="col">
+            <img src="/assets/images/ser1.png">
+          </div>
+          <div class="col">
+            <h3>Web Application Development</h3>
+            
+          </div>
+          </div>
+          <div class="row">
+          <div class="col">
+            <img src="/assets/images/ser2.png">
+          </div>
+          <div class="col">
+            <h3>Genral Programming</h3>
+            
+          </div>
+          </div>
+          <div class="row">
+          <div class="col">
+            <img src="/assets/images/ser3.png">
+          </div>
+          <div class="col">
+            <h3>Android App</h3>
+            
+          </div>
+          </div>
+          
+          
+          <% } %>
+
+        <% if (title == "Contact"){ %> 
+
+           <form>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault01">First name</label>
+        <input type="text" class="form-control" id="validationDefault01"  required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault02">Last name</label>
+        <input type="text" class="form-control" id="validationDefault02"  required>
+      </div>
+      <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Phone Number</label>
+      <input type="text" class="form-control" id="validationDefault03" required>
+      </div>
+      <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Email</label>
+      <input type="text" class="form-control" id="validationDefault03" required>
+      </div>
+      <div class="col-md-6 mb-3">
+      <label for="validationTextarea">Message</label>
+      <textarea class="form-control" id="validationTextarea" required></textarea>
+      </div>
+      <div class="col-md-6 mb-3">
+      <a class="btn btn-primary" href="http://localhost:3000/home" role="button">Submit form</a>
+      </div>
+            </form>
+            <hr class="my-4">
+            <h5>Contact Us:</h5>
+              <h6>&nbsp; 100 Abcd ave,</h6>
+                <h6>&nbsp;&nbsp;city,</h6>
+                  <h6>&nbsp;&nbsp;A1B1C1.</h6>
+
+        <% } %>
+      
+      
+
+    </div>
+  </main>
+
+  <%- include partials/bottom_nav.ejs %>
+
+  <%- include partials/footer.ejs %>
